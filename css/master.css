@@ -1,11 +1,52 @@
 .container {
   width: 400px;
-  margin: 0 auto;
+  margin: 50px auto;
+}
+.form-control {
+  box-shadow: none ;
+}
+* {
+  transition: all 0.3s ease-in-out !important;
+
+}
+h1 {
+  color: #2E294E;
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', Helvetica;
 }
 
-h1 {
-  color: red;
+h2 {
+  color: #F07199;
+}
+#current {
+  color :#2E294E;
+  text-align:center;
+   font-size:20px;
+  display: inline-block;
+  margin: 0 40%;
   text-transform: uppercase;
+}
+
+.fa {
+  color:#2E294E;
+  font-size: 25px;
+  cursor: pointer;
+}
+#task {
+border: 3px dashed #B8BDD1;
+border-radius: 3px;
+padding: 20px;
+font-size: 20px;
+transition: all 0.3s ease-in-out !important;
+
+}
+#task:focus {
+  box-shadow: 0px 10px 25px #B8BDD1 ;
+  outline: none;
+
+}
+#task:active, #task:focus {
+  outline: none;
 }
 
 #controls {

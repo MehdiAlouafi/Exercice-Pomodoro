@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Pomodoro</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/master.css">
 </head>
@@ -10,13 +13,18 @@
   <div class="container">
     <h1>My pomodoro app</h1>
     <h2>Doing</h2>
+    <p id="current"></p>
+
     <form>
       <div class="form-group">
         <label for="task"></label>
-        <input type="text" id="task" class="form-control">
+        <input type="text" id="task" class="form-control" value="">
       </div>
     </form>
     <div id="controls">
+      <i class="fa fa-arrow-up"></i>
+      <i class="fa fa-arrow-down"></i>
+
       <p class="time">0:00</p>
       <button type="button" id="play" class="btn btn-default btn-lg">
         <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
